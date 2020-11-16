@@ -1,0 +1,27 @@
+{% extends 'navbar.html' %}
+{% block templa %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Es año nuevo?</title>
+</head>
+<body style="background-color: rgb(68, 67, 67);" >
+  <h1 style="color: white;" >¿Es AÑO NUEVO?:</h1>
+
+  
+  {% if nuevoanio %}
+  <h1 style="font-size: 15em;
+  text-align: center;
+  color: white;
+  justify-content: center;">SI</h1>
+  {% else %}
+  <h1 style="font-size: 15em;
+  text-align: center;
+  justify-content: center;">NO</h1>
+  {% endif %}
+
+</body>
+</html>
+{% endblock templa %}
