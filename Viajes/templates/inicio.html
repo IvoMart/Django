@@ -1,0 +1,15 @@
+{% extends 'plantilla.html' %}
+{% block titulo %}OptiDjango{% endblock titulo %}
+{% block barranav %}
+<nav>
+  <ul>
+    <li><a href="/admin">Administrador</a></li>
+    <li><a href="{% url 'vueloLista' %}">Vuelos</a></li>
+    <li><a href="{% url 'aeropsLista' %}">Aeropuertos</a></li>
+    <li><a href="{% url 'inicio' %}">Inicio</a></li>
+  </ul>
+</nav>
+{% endblock barranav %}
+{% block bienvenida %}
+  <h1>Bienvenido a Aerolinea</h1>
+{% endblock bienvenida %}

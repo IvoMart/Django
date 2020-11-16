@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block barraNav %}
+  <ul>
+    <li><a href="/admin">Administrador</a></li>
+    <li><a href="{% url 'vueloLista' %}">Vuelos</a></li>
+    <li><a href="{% url 'aeropsLista' %}">Aeropuertos</a></li>
+    <li><a href="{% url 'inicio' %}">Inicio</a></li>
+  </ul>
+  {% endblock barraNav %}
+  {% block viaje %}
+  {% endblock viaje %}
+</body>
+</html>

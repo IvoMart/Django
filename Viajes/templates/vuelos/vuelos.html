@@ -1,0 +1,13 @@
+{% extends "vuelos/plantillaV.html" %}
+{% block viaje %}
+  <title>Vuelos</title>
+</head>
+<body>
+  <ul>
+    {% for vuelo in viajes %}
+    <li>
+      <a href="{% url 'vueloFiltra' vuelo.id %}">Vuelo Nro {{vuelo.id}}</a>: Origen {{vuelo.origen}} - Destino {{vuelo.destino}}
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock viaje %}

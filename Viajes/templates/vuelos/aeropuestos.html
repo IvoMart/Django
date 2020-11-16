@@ -1,0 +1,13 @@
+{% extends "vuelos/plantillaV.html" %}
+{% block viaje %}
+  <title>Vuelos</title>
+</head>
+<body>
+  <ul>
+    {% for aerop in aerops %}
+    <li>
+      Aeropuerto ID {{aerop.id}}: ( {{aerop.codigo}} ) Ciudad: {{aerop.ciudad}}
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock viaje %}

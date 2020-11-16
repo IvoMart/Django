@@ -1,0 +1,12 @@
+{% extends "vuelos/plantillaV.html" %}
+{% block viaje %}
+  <title>Vuelos Filtrado por ID</title>
+</head>
+<body>
+  <h1>Vuelo Nº {{vuelo.id}} </h1>
+  <ul>
+   <li>Origen {{vuelo.origen}}</li>
+   <li>Destino {{vuelo.destino}}</li>
+   <li>Tiempo de Vuelo: {{vuelo.duracionV}} horas</li>
+  </ul>
+{% endblock viaje %}
